@@ -14,7 +14,7 @@ def train_and_register_model():
     # 2. Load Processed Data
     X_train = np.load('data/processed/X_train_final.npy')
     X_test = np.load('data/processed/X_test_final.npy')
-    y_train = np.load('data/processed/y_train.npy')
+    y_train = np.load('data/processed/y_train.npy') 
     y_test = np.load('data/processed/y_test.npy')
     
     # 3. Define New Hyperparameters
