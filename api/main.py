@@ -4,8 +4,7 @@ import joblib
 import pandas as pd
 
 # 1. Initialize FastAPI App
-app = FastAPI(title="World Happiness Prediction API")
-
+app = FastAPI(title="Lab 10: World Happiness API (Local)")
 # 2. Load the trained pipeline and label encoder
 try:
     pipeline = joblib.load('models/happiness_pipeline.pkl')
