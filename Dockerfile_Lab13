@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+# Lab 13 Kosam 8002 port ni expose chesthunnam
+EXPOSE 8002
+# api.lab13_main ni run chesthunnam
+CMD ["uvicorn", "api.lab13_main:app", "--host", "0.0.0.0", "--port", "8002"]
